@@ -1,0 +1,116 @@
+---
+// Hero section component
+---
+
+<section class="hero">
+  <div class="hero-background">
+    <img src="/images/hero-banner.png" alt="Pixel art cruise ship sailing past a charming European village at sunset" class="hero-image" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="hero-hook">What if your vacation never had to end?</p>
+
+    <h1 class="hero-title pixel-text-lg">
+      Horizon Lines
+    </h1>
+
+    <p class="hero-subtitle">
+      Cruise from tourist to fleet mogul
+    </p>
+
+    <p class="hero-social-proof">
+      Coming soon to iOS & Android
+    </p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 248, 225, 0.3) 0%,
+      rgba(255, 248, 225, 0.7) 50%,
+      rgba(255, 248, 225, 0.95) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: var(--space-2xl) 0;
+  }
+
+  .hero-hook {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+    text-shadow: 0 1px 2px rgba(255, 248, 225, 0.8);
+  }
+
+  .hero-title {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 4px rgba(255, 248, 225, 0.9);
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-xl);
+    text-shadow: 0 1px 2px rgba(255, 248, 225, 0.8);
+  }
+
+  .hero-social-proof {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      min-height: 90vh;
+    }
+
+    .hero-hook {
+      font-size: 1.5rem;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  }
+</style>

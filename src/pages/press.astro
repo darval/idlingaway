@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Press Kit - Horizon Lines";
+---
+
+<Layout title={title}>
+  <Header />
+
+  <main class="press-page">
+    <div class="container">
+      <h1>Press Kit</h1>
+
+      <section class="fact-sheet">
+        <h2>Fact Sheet</h2>
+
+        <dl class="facts">
+          <div class="fact">
+            <dt>Game</dt>
+            <dd>Horizon Lines</dd>
+          </div>
+          <div class="fact">
+            <dt>Publisher</dt>
+            <dd>Idling Away</dd>
+          </div>
+          <div class="fact">
+            <dt>Developer</dt>
+            <dd>Rick Duff</dd>
+          </div>
+          <div class="fact">
+            <dt>Platforms</dt>
+            <dd>iOS, Android</dd>
+          </div>
+          <div class="fact">
+            <dt>Release</dt>
+            <dd>Coming Soon</dd>
+          </div>
+          <div class="fact">
+            <dt>Price</dt>
+            <dd>Free with optional IAP</dd>
+          </div>
+          <div class="fact">
+            <dt>Genre</dt>
+            <dd>Idle / Incremental</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="description">
+        <h2>Description</h2>
+        <p>
+          What if your vacation never had to end? <strong>Horizon Lines</strong> is a cozy idle game
+          about living the cruise dream. Progress from wide-eyed tourist on a European river cruise
+          to full-time ship resident to fleet mogul.
+        </p>
+        <p>
+          Inspired by the real phenomenon of people who've made cruise ships their permanent home,
+          Horizon Lines offers generous progression, ethical monetization, and a warm SNES-era
+          pixel art aesthetic that respects players' time. It's the first game from Idling Away,
+          a new publisher focused on premium idle games with soul.
+        </p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li><strong>Three-phase progression:</strong> Tourist → Resident → Mogul</li>
+          <li><strong>Generous offline progress:</strong> Your voyages continue while you're away</li>
+          <li><strong>Ethical monetization:</strong> No pay-to-win, everything achievable for free</li>
+          <li><strong>SNES-era pixel art:</strong> Rich, atmospheric visuals inspired by classics like Chrono Trigger</li>
+          <li><strong>Real-world inspiration:</strong> Every port researched, every ship inspired by reality</li>
+        </ul>
+      </section>
+
+      <section class="downloads">
+        <h2>Downloads</h2>
+        <p class="text-muted">Assets coming soon. Check back closer to launch.</p>
+        <!-- <a href="/press-kit.zip" class="btn btn-secondary">Download Press Kit (ZIP)</a> -->
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>
+          For press inquiries, please email:
+          <a href="mailto:support@idlingaway.com">support@idlingaway.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .press-page {
+    padding: var(--space-xl) 0;
+  }
+
+  h1 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-xl);
+  }
+
+  section {
+    margin-bottom: var(--space-xl);
+  }
+
+  h2 {
+    color: var(--color-primary);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--color-sky-teal);
+    margin-bottom: var(--space-lg);
+  }
+
+  h3 {
+    margin-top: var(--space-lg);
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .fact {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+
+  dt {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  dd {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  ul {
+    padding-left: var(--space-lg);
+  }
+
+  li {
+    margin-bottom: var(--space-sm);
+  }
+
+  .downloads {
+    padding: var(--space-lg);
+    background: var(--color-wave-foam);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact a {
+    color: var(--color-accent);
+  }
+</style>

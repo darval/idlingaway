@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Privacy Policy - Horizon Lines";
+const lastUpdated = "December 25, 2024";
+---
+
+<Layout title={title}>
+  <Header />
+
+  <main class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated text-muted">Last updated: {lastUpdated}</p>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Idling Away ("we", "our", or "us") respects your privacy. This policy explains
+          what information we collect and how we use it for Horizon Lines and other Idling Away games.
+        </p>
+        <p>
+          <strong>The short version:</strong> We collect minimal data, don't sell your
+          information, and respect your privacy.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information We Collect</h2>
+
+        <h3>Website Analytics</h3>
+        <p>
+          We use Plausible Analytics, a privacy-focused analytics service that doesn't
+          use cookies or collect personal data. We see aggregate data like page views
+          and referral sources, not individual user behavior.
+        </p>
+
+        <h3>Game Data (Future)</h3>
+        <p>
+          When the game launches, save data will be stored locally on your device.
+          If we add cloud saves in the future, this policy will be updated.
+        </p>
+      </section>
+
+      <section>
+        <h2>What We Don't Do</h2>
+        <ul>
+          <li>We don't sell your personal information</li>
+          <li>We don't use tracking cookies</li>
+          <li>We don't share data with advertisers</li>
+          <li>We don't send spam</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>We use these third-party services:</p>
+        <ul>
+          <li><strong>Plausible:</strong> Privacy-focused analytics</li>
+          <li><strong>Cloudflare:</strong> Website hosting and CDN</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Your Rights</h2>
+        <p>You can:</p>
+        <ul>
+          <li>Contact us with any privacy questions</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact:
+          <a href="mailto:privacy@idlingaway.com">privacy@idlingaway.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>
+          We may update this policy as the game develops.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .legal-page {
+    padding: var(--space-xl) 0;
+  }
+
+  .legal-page .container {
+    max-width: 800px;
+  }
+
+  h1 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .last-updated {
+    font-size: 0.875rem;
+    margin-bottom: var(--space-xl);
+  }
+
+  section {
+    margin-bottom: var(--space-xl);
+  }
+
+  h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+  }
+
+  h3 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+  }
+
+  ul {
+    padding-left: var(--space-lg);
+  }
+
+  li {
+    margin-bottom: var(--space-sm);
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+</style>

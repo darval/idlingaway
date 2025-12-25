@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Journey from '../components/Journey.astro';
+import Ports from '../components/Ports.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Horizon Lines - Cruise from Tourist to Fleet Mogul";
+const description = "What if your vacation never had to end? A cozy idle game about living the cruise dream. Explore European rivers, build loyalty, own your fleet. Coming soon to iOS & Android.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main>
+    <Hero />
+
+    <Journey />
+
+    <Ports />
+  </main>
+
+  <Footer />
+</Layout>

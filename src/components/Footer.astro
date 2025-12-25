@@ -1,0 +1,97 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-tagline pixel-text">Set sail, stay forever.</p>
+
+    <div class="footer-links">
+      <a href="/press">Press Kit</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+
+    <div class="footer-social">
+      <!-- Add social links when ready -->
+      <!-- <a href="https://twitter.com/..." aria-label="Twitter">Twitter</a> -->
+      <!-- <a href="https://instagram.com/..." aria-label="Instagram">Instagram</a> -->
+    </div>
+
+    <div class="footer-brand">
+      <p class="footer-parent">An <strong>Idling Away</strong> Game</p>
+      <p class="footer-credit">Made with love by Rick</p>
+    </div>
+
+    <p class="footer-copyright text-muted">
+      &copy; {currentYear} Idling Away. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: var(--space-xl) 0;
+    text-align: center;
+    background: var(--color-wave-foam);
+    border-top: 1px solid rgba(10, 124, 150, 0.1);
+  }
+
+  .footer-tagline {
+    color: var(--color-primary);
+    font-size: 0.6rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .footer-links a {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .footer-links a:hover {
+    color: var(--color-accent);
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .footer-social a {
+    color: var(--color-text-muted);
+  }
+
+  .footer-brand {
+    margin-bottom: var(--space-md);
+  }
+
+  .footer-parent {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  .footer-parent strong {
+    color: var(--color-primary);
+  }
+
+  .footer-credit {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+</style>

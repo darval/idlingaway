@@ -1,0 +1,87 @@
+---
+// Header component
+---
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="brand">
+      <img src="/images/logo-icon.png" alt="Horizon Lines" class="logo-icon" />
+      <div class="brand-text">
+        <span class="logo pixel-text">Horizon Lines</span>
+        <span class="parent-brand">An Idling Away Game</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="/press" class="nav-link">Press Kit</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    padding: var(--space-md) 0;
+    background: rgba(255, 248, 225, 0.9);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+  }
+
+  .brand:hover .logo {
+    color: var(--color-accent);
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    image-rendering: pixelated;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    transition: color 0.2s ease;
+  }
+
+  .parent-brand {
+    font-size: 0.625rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    margin-top: 2px;
+  }
+
+  .nav {
+    display: flex;
+    gap: var(--space-lg);
+  }
+
+  .nav-link {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--color-text);
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent);
+  }
+</style>
