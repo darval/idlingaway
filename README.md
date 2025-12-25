@@ -68,3 +68,4 @@ src/
 ## Analytics
 
 Plausible Analytics is pre-configured (commented out). Uncomment in `Layout.astro` and update the domain.
+
